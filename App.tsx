@@ -110,7 +110,7 @@ const Hero: React.FC = () => (
 
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 mt-0 lg:mt-8">
           <a 
-            href="https://payfast.greenn.com.br/154044" 
+            href="https://payfast.greenn.com.br/154044/offer/xs622D" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-10 py-5 cta-green-gradient text-black font-black rounded-2xl text-lg flex items-center justify-center gap-3 animate-cta-pulse transition-all uppercase tracking-tighter shadow-[0_20px_60px_rgba(4,214,57,0.5)]"
@@ -183,7 +183,7 @@ const ObjectiveSection: React.FC = () => (
         <div className="space-y-12">
           <div className="text-center max-w-5xl mx-auto">
             <h3 className="text-[22px] md:text-5xl lg:text-6xl font-black heading-font text-white uppercase tracking-tighter leading-[1.2] md:leading-[1.1] mb-2 text-balance">
-              ESSA IMERSÃO TEM UM OBJETIVO <br />
+              ESSA IMERSÃO TEM UN OBJETIVO <br />
               <span className="gold-text">BEM CLARO E DEFINIDO</span>
             </h3>
           </div>
@@ -417,15 +417,15 @@ const Pricing: React.FC = () => (
                <span className="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter mb-2">12x de</span>
                <div className="flex items-baseline justify-center mb-4">
                  <span className="text-3xl md:text-5xl font-black text-amber-500 mr-2">R$</span>
-                 <span className="text-7xl md:text-[11rem] font-black gold-text heading-font leading-none tracking-tighter">4,83</span>
+                 <span className="text-7xl md:text-[11rem] font-black gold-text heading-font leading-none tracking-tighter">5,86</span>
                </div>
                <div className="text-zinc-400 text-lg md:text-2xl font-medium tracking-tight">
-                 ou <span className="text-white font-bold underline decoration-amber-500 decoration-2 underline-offset-8">R$ 47,00 à vista</span>
+                 ou <span className="text-white font-bold underline decoration-amber-500 decoration-2 underline-offset-8">R$ 57,00 à vista</span>
                </div>
             </div>
           </div>
           <a 
-            href="https://payfast.greenn.com.br/154044" 
+            href="https://payfast.greenn.com.br/154044/offer/xs622D" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full inline-flex cta-green-gradient py-5 md:py-7 rounded-2xl text-black font-black text-lg md:text-2xl animate-cta-pulse uppercase tracking-tighter items-center justify-center gap-3 transition-transform hover:scale-[1.02] shadow-[0_20px_50px_rgba(4,214,57,0.3)]"
@@ -471,7 +471,7 @@ const Calculator: React.FC = () => {
               </span>
               <div className="mt-6">
                 <p className="text-zinc-500 text-sm font-medium opacity-80">
-                  {revenue >= 100000 ? "Você já está no nível do Clube do Milhão. Parabéns." : "Você precisa de um plano para acelerar esse cronômetro imediatamente."}
+                  {revenue >= 100000 ? "Você já está no nível do Clube do Milhão. Parabéns." : "Você precisa de um plano para acelerar esse cronômetro immediately."}
                 </p>
               </div>
             </div>
@@ -657,7 +657,7 @@ const App: React.FC = () => {
       <Footer />
       <div className="fixed bottom-6 left-6 right-6 z-40 md:hidden">
         <a 
-          href="https://payfast.greenn.com.br/154044" 
+          href="https://payfast.greenn.com.br/154044/offer/xs622D" 
           target="_blank" 
           rel="noopener noreferrer"
           className="cta-green-gradient w-full py-5 rounded-2xl text-black font-black text-center flex items-center justify-center gap-2 uppercase text-[12px] shadow-[0_15px_40px_rgba(4,214,57,0.4)] animate-cta-pulse"
