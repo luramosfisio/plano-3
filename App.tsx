@@ -12,7 +12,8 @@ import {
   Quote,
   ShieldAlert,
   Award,
-  MessageCircle
+  MessageCircle,
+  Monitor
 } from 'lucide-react';
 
 // --- Scroll Reveal Wrapper ---
@@ -81,6 +82,10 @@ const Hero: React.FC = () => (
             <Clock className="w-4 h-4 text-amber-500" />
             <span className="text-[10px] font-bold tracking-[0.1em] uppercase text-zinc-100">09h às 17h • Ao Vivo</span>
           </div>
+          <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-md glass border-white/10 bg-black/60 shadow-lg">
+            <Monitor className="w-4 h-4 text-amber-500" />
+            <span className="text-[10px] font-bold tracking-[0.1em] uppercase text-zinc-100">100% ONLINE</span>
+          </div>
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black heading-font mb-6 leading-[1.1] tracking-tighter uppercase drop-shadow-[0_10px_30px_rgba(0,0,0,0.8)] text-balance">
@@ -110,7 +115,7 @@ const Hero: React.FC = () => (
 
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 mt-0 lg:mt-8">
           <a 
-            href="https://payfast.greenn.com.br/154044/offer/xs622D" 
+            href="https://payfast.greenn.com.br/154044/offer/V3hibX" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-10 py-5 cta-green-gradient text-black font-black rounded-2xl text-lg flex items-center justify-center gap-3 animate-cta-pulse transition-all uppercase tracking-tighter shadow-[0_20px_60px_rgba(4,214,57,0.5)]"
@@ -353,12 +358,18 @@ const Schedule: React.FC = () => {
 
   return (
     <section className="py-12 md:py-20 bg-black relative overflow-hidden bg-grid">
-      <div className="max-w-3xl mx-auto px-6 relative z-10">
+      <div className="max-w-4xl mx-auto px-6 relative z-10">
         <Reveal>
           <div className="flex flex-col items-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-amber-500/20 bg-black/50 mb-6">
-              <Calendar className="w-4 h-4 text-amber-500" />
-              <span className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">28 de fevereiro | Ao Vivo</span>
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-amber-500/20 bg-black/50">
+                <Calendar className="w-4 h-4 text-amber-500" />
+                <span className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">28 de fevereiro | Ao Vivo</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-amber-500/20 bg-black/50">
+                <Monitor className="w-4 h-4 text-amber-500" />
+                <span className="text-[10px] font-bold text-white uppercase tracking-[0.2em]">100% ONLINE NO ZOOM</span>
+              </div>
             </div>
             <h2 className="text-3xl md:text-5xl font-black heading-font text-white uppercase tracking-tighter mb-1 text-center">
               Cronograma
@@ -366,7 +377,7 @@ const Schedule: React.FC = () => {
             <p className="text-zinc-500 uppercase tracking-[0.4em] font-black text-[10px] md:text-sm">Sábado</p>
           </div>
 
-          <div className="mt-8 space-y-0 border-t border-white/10">
+          <div className="max-w-3xl mx-auto mt-8 space-y-0 border-t border-white/10">
             {items.map((item, index) => (
               <div 
                 key={index} 
@@ -417,15 +428,15 @@ const Pricing: React.FC = () => (
                <span className="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter mb-2">12x de</span>
                <div className="flex items-baseline justify-center mb-4">
                  <span className="text-3xl md:text-5xl font-black text-amber-500 mr-2">R$</span>
-                 <span className="text-7xl md:text-[11rem] font-black gold-text heading-font leading-none tracking-tighter">5,86</span>
+                 <span className="text-7xl md:text-[11rem] font-black gold-text heading-font leading-none tracking-tighter">6,89</span>
                </div>
                <div className="text-zinc-400 text-lg md:text-2xl font-medium tracking-tight">
-                 ou <span className="text-white font-bold underline decoration-amber-500 decoration-2 underline-offset-8">R$ 57,00 à vista</span>
+                 ou <span className="text-white font-bold underline decoration-amber-500 decoration-2 underline-offset-8">R$ 67,00 à vista</span>
                </div>
             </div>
           </div>
           <a 
-            href="https://payfast.greenn.com.br/154044/offer/xs622D" 
+            href="https://payfast.greenn.com.br/154044/offer/V3hibX" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full inline-flex cta-green-gradient py-5 md:py-7 rounded-2xl text-black font-black text-lg md:text-2xl animate-cta-pulse uppercase tracking-tighter items-center justify-center gap-3 transition-transform hover:scale-[1.02] shadow-[0_20px_50px_rgba(4,214,57,0.3)]"
@@ -438,49 +449,6 @@ const Pricing: React.FC = () => (
     </div>
   </section>
 );
-
-// --- Sessão 7: Calculator ---
-const Calculator: React.FC = () => {
-  const [revenue, setRevenue] = useState(10000);
-  const months = 1000000 / revenue;
-  return (
-    <section className="py-12 md:py-20 bg-black border-y border-white/5 relative">
-       <div className="absolute inset-0 bg-grid opacity-20 pointer-events-none"></div>
-      <div className="max-w-5xl mx-auto px-6 relative z-10">
-        <Reveal>
-          <h2 className="text-3xl md:text-6xl font-black heading-font text-center mb-4 uppercase text-white tracking-tighter drop-shadow-lg text-balance">CALCULADORA DO MILHÃO</h2>
-          <p className="text-zinc-400 text-center text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium text-balance">
-            Descubra quanto tempo você levaria para acumular o seu primeiro milhão de faturamento, considerando o seu faturamento mensal atual.
-          </p>
-          <div className="glass p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] bg-zinc-950/40 relative overflow-hidden border-white/10">
-            <div className="mb-10">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 gap-2">
-                <span className="text-zinc-500 font-black uppercase text-[9px] tracking-[0.4em]">Faturamento Mensal Atual</span>
-                <span className="text-3xl md:text-4xl font-black text-white">R$ {revenue.toLocaleString('pt-BR')}</span>
-              </div>
-              <input 
-                type="range" min="5000" max="150000" step="5000" value={revenue}
-                onChange={(e) => setRevenue(Number(e.target.value))}
-                className="w-full h-2 bg-zinc-900 appearance-none cursor-pointer accent-amber-500 rounded-full"
-              />
-            </div>
-            <div className="text-center p-6 md:p-10 bg-black rounded-[2rem] border border-white/5">
-              <p className="text-zinc-500 uppercase text-[9px] font-black tracking-[0.4em] mb-4">Tempo para o 1º Milhão Acumulado</p>
-              <span className="text-4xl md:text-8xl font-black gold-text heading-font tracking-tighter">
-                {months > 12 ? `${(months/12).toFixed(1)} Anos` : `${Math.ceil(months)} Meses`}
-              </span>
-              <div className="mt-6">
-                <p className="text-zinc-500 text-sm font-medium opacity-80">
-                  {revenue >= 100000 ? "Você já está no nível do Clube do Milhão. Parabéns." : "Você precisa de um plano para acelerar esse cronômetro immediately."}
-                </p>
-              </div>
-            </div>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-};
 
 // --- Sessão 8: AboutExpert ---
 const AboutExpert: React.FC = () => (
@@ -650,14 +618,13 @@ const App: React.FC = () => {
       <Reveal><VisionSection /></Reveal>
       <Reveal><Schedule /></Reveal>
       <Reveal><Pricing /></Reveal>
-      <Calculator />
       <AboutExpert />
       <Reveal><Guarantee /></Reveal>
       <Reveal><FAQ /></Reveal>
       <Footer />
       <div className="fixed bottom-6 left-6 right-6 z-40 md:hidden">
         <a 
-          href="https://payfast.greenn.com.br/154044/offer/xs622D" 
+          href="https://payfast.greenn.com.br/154044/offer/V3hibX" 
           target="_blank" 
           rel="noopener noreferrer"
           className="cta-green-gradient w-full py-5 rounded-2xl text-black font-black text-center flex items-center justify-center gap-2 uppercase text-[12px] shadow-[0_15px_40px_rgba(4,214,57,0.4)] animate-cta-pulse"
