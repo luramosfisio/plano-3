@@ -1,1 +1,5 @@
-Permission denied
+{
+  "name": "Plano do Milhão - Imersão para Fisioterapeutas",
+  "description": "Uma página de vendas de alta conversão para a imersão exclusiva focada em transformar negócios de fisioterapia em empresas milionárias.",
+  "requestFramePermissions": []
+}
