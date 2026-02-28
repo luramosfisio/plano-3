@@ -48,7 +48,7 @@ const Reveal: React.FC<{ children: React.ReactNode; className?: string }> = ({ c
 // --- Top Banner ---
 const TopBanner: React.FC = () => (
   <div className="gold-gradient w-full py-4 px-4 text-center relative z-50 shadow-[0_4px_30px_rgba(245,158,11,0.2)]">
-    <p className="text-black text-[12px] md:text-lg font-black uppercase tracking-[0.3em] leading-tight">
+    <p className="text-black text-[12px] md:text-lg font-black uppercase tracking-[0.1em] md:tracking-[0.3em] leading-tight">
       Plano do Milhão • Exclusivo para Fisioterapeutas
     </p>
   </div>
@@ -66,6 +66,7 @@ const Hero: React.FC = () => (
         fetchPriority="high"
         decoding="sync"
         loading="eager"
+        referrerPolicy="no-referrer"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 lg:via-black/50 to-transparent"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
@@ -108,6 +109,7 @@ const Hero: React.FC = () => (
               fetchPriority="high"
               decoding="sync"
               loading="eager"
+              referrerPolicy="no-referrer"
             />
             <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
           </div>
@@ -115,7 +117,7 @@ const Hero: React.FC = () => (
 
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8 mt-0 lg:mt-8">
           <a 
-            href="https://payfast.greenn.com.br/154044/offer/vZtACP" 
+            href="https://payfast.greenn.com.br/154044/offer/ko2GtV" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full sm:w-auto px-10 py-5 cta-green-gradient text-black font-black rounded-2xl text-lg flex items-center justify-center gap-3 animate-cta-pulse transition-all uppercase tracking-tighter shadow-[0_20px_60px_rgba(4,214,57,0.5)]"
@@ -148,6 +150,7 @@ const TransformationSection: React.FC = () => (
                 className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                 loading="eager"
                 decoding="sync"
+                referrerPolicy="no-referrer"
               />
             </div>
             <div className="relative aspect-video rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl group bg-zinc-900">
@@ -157,6 +160,7 @@ const TransformationSection: React.FC = () => (
                 className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                 loading="eager"
                 decoding="sync"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -259,7 +263,7 @@ const Selection: React.FC = () => (
         <Reveal className="h-full">
           <div className="relative group h-full">
             <div className="absolute -inset-2 bg-emerald-500/5 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="relative glass p-8 md:p-12 rounded-[2.5rem] border-emerald-500/10 bg-zinc-950/40 h-full flex flex-col">
+            <div className="relative glass p-6 md:p-12 rounded-[2.5rem] border-emerald-500/10 bg-zinc-950/40 h-full flex flex-col">
               <div className="mb-8">
                 <h2 className="text-3xl md:text-4xl font-black heading-font text-white uppercase tracking-tighter leading-none">
                   A IMERSÃO É <br /> <span className="text-emerald-500">PARA VOCÊ SE…</span>
@@ -287,7 +291,7 @@ const Selection: React.FC = () => (
         <Reveal className="h-full">
           <div className="relative group h-full">
             <div className="absolute -inset-2 bg-rose-500/5 rounded-[3rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <div className="relative glass p-8 md:p-12 rounded-[2.5rem] border-rose-500/10 bg-zinc-950/40 h-full flex flex-col">
+            <div className="relative glass p-6 md:p-12 rounded-[2.5rem] border-rose-500/10 bg-zinc-950/40 h-full flex flex-col">
               <div className="mb-8">
                 <h2 className="text-3xl md:text-4xl font-black heading-font text-white uppercase tracking-tighter leading-none">
                   ESTA IMERSÃO <br /> <span className="text-rose-500">NÃO É PARA:</span>
@@ -413,7 +417,7 @@ const Pricing: React.FC = () => (
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-6xl font-black heading-font text-white uppercase tracking-tighter drop-shadow-lg text-balance">GARANTA SUA VAGA AGORA</h2>
         </div>
-        <div className="glass p-8 md:p-16 rounded-[2.5rem] md:rounded-[3.5rem] border-amber-500/30 text-center bg-zinc-950/60 relative overflow-hidden shadow-[0_0_100px_rgba(245,158,11,0.15)]">
+        <div className="glass p-6 md:p-16 rounded-[2.5rem] md:rounded-[3.5rem] border-amber-500/30 text-center bg-zinc-950/60 relative overflow-hidden shadow-[0_0_100px_rgba(245,158,11,0.15)]">
           <div className="absolute top-4 left-1/2 -translate-x-1/2 px-6 py-2 bg-red-600 text-white text-xs md:text-base font-black uppercase tracking-[0.2em] rounded-full shadow-lg">
             ÚLTIMAS VAGAS
           </div>
@@ -424,16 +428,16 @@ const Pricing: React.FC = () => (
             <div className="flex flex-col items-center justify-center">
                <span className="text-2xl md:text-4xl font-black text-white uppercase tracking-tighter mb-2">12x de</span>
                <div className="flex items-baseline justify-center mb-4">
-                 <span className="text-3xl md:text-5xl font-black text-amber-500 mr-2">R$</span>
-                 <span className="text-7xl md:text-[11rem] font-black gold-text heading-font leading-none tracking-tighter">9,97</span>
+                 <span className="text-2xl md:text-5xl font-black text-amber-500 mr-2">R$</span>
+                 <span className="text-6xl md:text-[11rem] font-black gold-text heading-font leading-none tracking-tighter">30,54</span>
                </div>
                <div className="text-zinc-400 text-lg md:text-2xl font-medium tracking-tight">
-                 ou <span className="text-white font-bold underline decoration-amber-500 decoration-2 underline-offset-8">R$ 97,00 à vista</span>
+                 ou <span className="text-white font-bold underline decoration-amber-500 decoration-2 underline-offset-8">R$ 297,00 à vista</span>
                </div>
             </div>
           </div>
           <a 
-            href="https://payfast.greenn.com.br/154044/offer/vZtACP" 
+            href="https://payfast.greenn.com.br/154044/offer/ko2GtV" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-full inline-flex cta-green-gradient py-5 md:py-7 rounded-2xl text-black font-black text-lg md:text-2xl animate-cta-pulse uppercase tracking-tighter items-center justify-center gap-3 transition-transform hover:scale-[1.02] shadow-[0_20px_50px_rgba(4,214,57,0.3)]"
@@ -474,72 +478,13 @@ const AboutExpert: React.FC = () => (
                 loading="eager"
                 decoding="sync"
                 fetchPriority="high"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-);
-
-// --- Sessão 9: Guarantee (Revised) ---
-const Guarantee: React.FC = () => (
-  <section className="py-20 md:py-32 bg-black relative overflow-hidden">
-    {/* Atmospheric Background elements */}
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_rgba(245,158,11,0.05)_0%,_transparent_70%)] pointer-events-none"></div>
-    <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none"></div>
-    
-    <div className="max-w-6xl mx-auto px-6 relative z-10">
-      <Reveal className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-        {/* Prestige Seal */}
-        <div className="relative shrink-0">
-          <div className="absolute -inset-10 bg-amber-500/10 blur-[60px] rounded-full animate-pulse"></div>
-          <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-amber-500/40 p-2 bg-zinc-950 flex items-center justify-center shadow-[0_0_50px_rgba(245,158,11,0.2)] animate-shine">
-            <div className="absolute inset-0 rounded-full border border-amber-500/10 animate-spin-[20s_linear_infinite]"></div>
-            <div className="w-full h-full rounded-full border-2 border-dashed border-amber-500/20 flex flex-col items-center justify-center text-center p-4">
-               <ShieldAlert className="w-12 h-12 md:w-16 md:h-16 text-amber-500 mb-2" />
-               <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-amber-500">Garantia Blindada</span>
-               <div className="mt-2 text-3xl md:text-5xl font-black heading-font text-white leading-none">60<br /><span className="text-sm md:text-xl">MIN</span></div>
-            </div>
-          </div>
-          {/* Medal Decorative elements */}
-          <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center border-4 border-black shadow-xl">
-             <Award className="text-white w-6 h-6" />
-          </div>
-        </div>
-
-        {/* Text Content */}
-        <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-3xl md:text-5xl font-black heading-font text-white uppercase mb-6 tracking-tighter leading-tight text-balance">
-            GARANTIA INCONDICIONAL <br /><span className="gold-text">DA PRIMEIRA HORA</span>
-          </h2>
-          <div className="space-y-6">
-            <p className="text-xl md:text-2xl text-zinc-200 leading-snug font-medium text-balance">
-              Participe da imersão e conheça o método. Se durante a primeira hora você achar que não valeu cada centavo investido, é só pedir <span className="text-white font-bold">reembolso total</span>.
-            </p>
-            <p className="text-lg md:text-xl text-zinc-400 leading-relaxed">
-              Sem perguntas, sem burocracia.
-            </p>
-            <p className="text-sm md:text-base text-zinc-500 leading-relaxed font-medium bg-zinc-950/50 p-4 rounded-xl border border-white/5">
-              <span className="text-amber-500/70 font-bold uppercase tracking-widest text-[10px] block mb-2">Termos da Garantia:</span>
-              Essa garantia só é válida se você participar desde o início da imersão e solicitar o reembolso em até 60 minutos após o início da imersão.
-            </p>
-            <div className="pt-6 flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
-              <div className="flex flex-col">
-                <span className="text-xs uppercase tracking-[0.3em] font-black text-zinc-500 mb-1">Assinatura de Compromisso</span>
-                <span className="text-2xl md:text-3xl font-medium heading-font text-white opacity-80">Luciana Ramos</span>
-              </div>
-              <div className="h-10 w-px bg-white/10 hidden sm:block"></div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="text-emerald-500 w-5 h-5" />
-                <span className="text-sm font-bold text-zinc-400 uppercase tracking-widest">Reembolso Simplificado</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Reveal>
     </div>
   </section>
 );
@@ -616,12 +561,11 @@ const App: React.FC = () => {
       <Reveal><Schedule /></Reveal>
       <Reveal><Pricing /></Reveal>
       <AboutExpert />
-      <Reveal><Guarantee /></Reveal>
       <Reveal><FAQ /></Reveal>
       <Footer />
       <div className="fixed bottom-6 left-6 right-6 z-40 md:hidden">
         <a 
-          href="https://payfast.greenn.com.br/154044/offer/vZtACP" 
+          href="https://payfast.greenn.com.br/154044/offer/ko2GtV" 
           target="_blank" 
           rel="noopener noreferrer"
           className="cta-green-gradient w-full py-5 rounded-2xl text-black font-black text-center flex items-center justify-center gap-2 uppercase text-[12px] shadow-[0_15px_40px_rgba(4,214,57,0.4)] animate-cta-pulse"
